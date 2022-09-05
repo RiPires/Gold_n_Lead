@@ -1,0 +1,4 @@
+0.vacuum.mat  ! chamber
+0.au.mat      ! film material
+0.au.mat      ! detector window Au
+0.si.mat      ! detector Si
