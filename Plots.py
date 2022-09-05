@@ -101,9 +101,6 @@ def PlotBoth(dataFile, simuFile):
         simu_Energy.append(float(aux[i][0]))
         simu_Counts.append(float(aux[i][1]))
 
-    total_data = sum(data_Counts)
-    total_simu = sum(simu_Counts)
-
     max_data = max(data_Counts)
     max_simu = max(simu_Counts)
 
@@ -248,4 +245,4 @@ def PlotStopPow(File):
 ###   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   ###
 
 
-PlotBoth('u232+Au.mca', 'alfaMC_filme/Edet.csv')
+PlotBoth('u232+Au.mca', 'alfaMC_filme_Au/Edet.csv')

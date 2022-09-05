@@ -15,7 +15,7 @@
 
         ! cylindrical target/film
           real*8, parameter :: rtar=1.d0    ! radius
-          real*8, parameter :: htar=25.d-4  ! thickness
+          real*8, parameter :: htar=50.d-7  ! thickness
           real*8, parameter :: zwtar=8.0     ! z of target entrance
           real*8, parameter :: xtar=0.      ! x,y,z of target center
           real*8, parameter :: ytar=0. 
@@ -27,7 +27,7 @@
         ! cylindrical gold detector window
           real*8, parameter :: rwin=0.57/2.d0 ! radius
           real*8, parameter :: hwin=2.07d-6   ! thickness ~ 40 ug/cm2 rho=19.32 g/cm3
-          real*8, parameter :: zwwin=5.0     ! z of target entrance
+          real*8, parameter :: zwwin=8.5     ! z of window entrance
           real*8, parameter :: xwin=0.d0      ! x,y,z of target center
           real*8, parameter :: ywin=0.d0
           real*8, parameter :: zwin=zwwin+hwin/2.
@@ -70,12 +70,12 @@
          integer*4 :: iscol=0 ! scattering -1: no scaterring, 0:Fermi, 1: Single collision
          integer*4 :: istra=0 ! straggling -1: no stragglig, 0: Gauss, 1: Gauss/Vavilov/Landau
 
-         integer*4 :: ntot= 1E6 ! Total number of events
-         integer*4 :: ninfo=1E5 ! Information loop
+         integer*4 :: ntot= 1E7 ! Total number of events
+         integer*4 :: ninfo=5E5 ! Information loop
 
          ! detector resolution R=sigma/E = FWHM/(2.355*E)
-         real*8,parameter  :: adet=0.0304 !parameters for detector resolution
-         real*8,parameter  :: bdet=-0.00708   !R=a/sqrt(E)+b  - if adet=0 no resolution
+         real*8,parameter  :: adet=0.0005 !parameters for detector resolution
+         real*8,parameter  :: bdet=0.0000   !R=a/sqrt(E)+b  - if adet=0 no resolution
 
          ! chamber step
          real*8,parameter  :: stepmincha= 100.d-4 !chamber min step in cm
@@ -83,7 +83,7 @@
 
          ! target/film step
          real*8,parameter  :: stepmintar= 0.01d-4 !target min step in cm
-         real*8,parameter  :: stepmaxtar= 10.d-4 !target max step in cm
+         real*8,parameter  :: stepmaxtar= 9.d-4 !target max step in cm
 
          ! Gold window
          real*8,parameter  :: stepminwin= 1.0d-8 !chamber max step in cm
@@ -100,8 +100,8 @@
          ! histogramming
 
          ! Energy in detector
-         integer*4, parameter :: nbindet=1000
-         real*8,parameter     :: Ehdet=10.d0 ! Emax histogram in MeV
+         integer*4, parameter :: nbindet=1024
+         real*8,parameter     :: Ehdet=9.d0 ! Emax histogram in MeV
 
          ! Energy in target
          integer*4, parameter :: nbintar=1000
