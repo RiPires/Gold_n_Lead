@@ -3,10 +3,10 @@
  *  histogram ID:                 1
  *  histogram type:               1
  *  status:                       1
- *  number of channels:        2000
+ *  number of channels:        1024
  *  xmin:               0.00000    
  *  xmax:               9.00000    
- *  bin size:          0.450000E-02
+ *  bin size:          0.878906E-02
  *  nb of entries:     0.552334E+07
  *  nb valid entries:  0.552334E+07
  *  sum of contents:   0.552334E+07

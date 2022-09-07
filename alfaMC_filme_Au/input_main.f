@@ -100,7 +100,7 @@
          ! histogramming
 
          ! Energy in detector
-         integer*4, parameter :: nbindet=1024
+         integer*4, parameter :: nbindet=1000
          real*8,parameter     :: Ehdet=9.d0 ! Emax histogram in MeV
 
          ! Energy in target
