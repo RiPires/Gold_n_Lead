@@ -29,4 +29,3 @@ fo.close()
 
 
 # Write the data in an output file for further representation and/or analysis
-
