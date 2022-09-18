@@ -74,13 +74,13 @@ Channels = [261.,
 708.
 ]
 
-Sigmas = [2.5,
-2.5,
-2.5,
-2.5
+Sigmas = [6.0,
+7.5,
+4.5,
+10.0
 ]
 
 #########################################
-print('Calibração Yb-Ge-Si-O:')                    #
+print('Calibração Yb-Ge-Si-O:')         #
 Calibracao(Energies, Channels, Sigmas)  #
 #########################################
