@@ -90,6 +90,8 @@ def VdG_PlotBoth(File1, File2):
     fig, ax = plt.subplots()
     ax.plot(ch1,y1,'.', color ='xkcd:blue', label=(str(File1)))
     ax.plot(ch2,y2,'+', color ='xkcd:red', label=(str(File2)))
+    #ax.semilogy(ch1,y1,'.', color ='xkcd:blue', label=(str(File1)))
+    #ax.semilogy(ch2,y2,'+', color ='xkcd:red', label=(str(File2)))
     legend = ax.legend(loc="upper right",ncol=1, shadow=False,fancybox=True,framealpha = 0.0,fontsize=20)
     legend.get_frame().set_facecolor('#DAEBF2')
     tick_params(axis='both', which='major', labelsize=22)
@@ -102,9 +104,13 @@ def VdG_PlotBoth(File1, File2):
 
 ###                 Plots                     ###
 #VdG_Plot('20220907/ERDrun01.dat') # V-Ta-Nb    
-#VdG_Plot('20220907/ERDrun03.dat') # Yb-Ge-Si-O  
+VdG_Plot('20220907/ERDrun03.dat') # Yb-Ge-Si-O  
 #################################################
-VdG_PlotBoth('20220907/RBS1run01.dat', '20220907/RBS1run02.dat')
-VdG_PlotBoth('20220907/RBS2run01.dat', '20220907/RBS2run02.dat')
-VdG_PlotBoth('20220907/ERDrun01.dat', '20220907/ERDrun02.dat')
+#VdG_PlotBoth('20220907/RBS1run01.dat', '20220907/RBS1run02.dat')
+#VdG_PlotBoth('20220907/RBS2run01.dat', '20220907/RBS2run02.dat')
+#VdG_PlotBoth('20220907/ERDrun01.dat', '20220907/ERDrun02.dat')
+#################################################
+VdG_PlotBoth('20220907/RBS1run04.dat', '20220907/RBS1run05.dat')
+VdG_PlotBoth('20220907/RBS2run04.dat', '20220907/RBS2run05.dat')
+VdG_PlotBoth('20220907/ERDrun04.dat', '20220907/ERDrun05.dat')
 #################################################
